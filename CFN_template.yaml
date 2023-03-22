@@ -1,1 +1,33 @@
+---
+# Note that the --- at the beginning of the file is optional and just indicates that this is a YAML file.
 
+AWSTemplateFormatVersion: '2010-09-09'
+Description: A description of your CloudFormation template
+Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"   # ARN
+    Properties:
+      ImageId: ami-0c55b159cbfafe1f0
+      InstanceType: t2.micro
+Parameters:
+  InstanceName:
+    Type: String
+    Default: MyInstance
+    Description: The name of the EC2 instance
+Outputs:
+  InstancePublicIP:
+    Value: !GetAtt MyEC2Instance.PublicIp
+    Description: The public IP address of the EC2 instance
+Metadata:
+  Description: Sample CloudFormation template
+  Author: John Doe
+  
+  
+  
+  
+  
+  
+  
+# Parameters that allow the user to specify the name of the EC2 instance.  
+# Metadata for the whole template, which provides additional information about the template and its author.
+# Metadata for the EC2 instance resource, which provides additional information about the instance.
