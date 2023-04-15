@@ -1,0 +1,10 @@
+In the create_lambda.sh script, the FUNCTION_NAME variable is set to the desired name for the Lambda function, 
+and the CODE_FILE variable is set to the name of the ZIP file containing the function code.
+The zip command is then used to create the ZIP file, with the lambda_function.py file being added to it.
+Finally, the aws lambda create-function command is used to create the Lambda function. 
+The --function-name option specifies the name of the function, the --runtime option specifies the runtime environment 
+(in this case, Python 3.9), the --role option specifies the ARN of the IAM role that the function will use, 
+the --handler option specifies the name of the handler function (in this case, lambda_function.handler), 
+and the --zip-file option specifies the location of the ZIP file containing the function code.
+You can modify the script to suit your specific needs, such as changing the runtime environment or IAM role, 
+or adding additional options and settings to the Lambda function.
