@@ -1,0 +1,21 @@
+some common AWS CLI commands:
+
+    aws configure - Use this command to configure the AWS CLI with your AWS access keys and other settings.
+
+    aws s3 ls - Use this command to list all the S3 buckets in your AWS account.
+
+    aws ec2 describe-instances - Use this command to get details about your EC2 instances, including their state, security groups, tags, and more.
+
+    aws lambda list-functions - Use this command to list all the Lambda functions in your AWS account.
+
+    aws cloudformation describe-stacks - Use this command to get details about your CloudFormation stacks, including their status, resources, and more.
+
+    aws iam list-users - Use this command to list all the IAM users in your AWS account.
+
+    aws route53 list-hosted-zones - Use this command to list all the Route 53 hosted zones in your AWS account.
+
+    aws rds describe-db-instances - Use this command to get details about your RDS database instances, including their engine, size, storage, and more.
+
+    aws sts get-caller-identity - Use this command to get information about the AWS account that you are currently using.
+
+    aws cloudwatch get-metric-statistics - Use this command to retrieve metrics and statistics about your AWS resources, such as EC2 instances, RDS databases, and more.
