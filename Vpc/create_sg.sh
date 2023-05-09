@@ -8,7 +8,7 @@ AWS_REGION=us-east-1
 SECURITY_GROUP_NAME=my-security-group
 
 # Create the security group and store its ID in a variable
-SECURITY_GROUP_ID=$(aws ec2 create-security-group --group-name $SECURITY_GROUP_NAME --description "My security group" --vpc-id $VPC_ID --region $AWS_REGION --output te>
+SECURITY_GROUP_ID=$(aws ec2 create-security-group --group-name $SECURITY_GROUP_NAME --description "My security group" --vpc-id $VPC_ID --region $AWS_REGION --output text
 
 # Add any inbound rules you want to the security group
 aws ec2 authorize-security-group-ingress --group-id $SECURITY_GROUP_ID --protocol tcp --port 22 --cidr 0.0.0.0/0 --region $AWS_REGION
