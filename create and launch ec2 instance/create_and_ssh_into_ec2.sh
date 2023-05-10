@@ -30,4 +30,4 @@ PUBLIC_IP=$(aws ec2 describe-instances \
 echo "Instance public IP address: $PUBLIC_IP"
 
 # SSH into the instance using the key pair
-ssh -i ~/.ssh/$KEY_NAME ec2-user@$PUBLIC_IP
+ssh -i ~/.ssh/$KEY_NAME $INSTANCE_NAME@$PUBLIC_IP
